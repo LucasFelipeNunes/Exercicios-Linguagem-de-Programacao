@@ -1,3 +1,4 @@
+//Nome: Lucas Felipe da Silva Nunes
 public class TrianguloComBarraN
 {
 	public static void main(String[] args)
