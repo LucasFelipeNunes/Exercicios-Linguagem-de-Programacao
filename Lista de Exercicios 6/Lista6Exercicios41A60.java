@@ -8,7 +8,9 @@ public class Lista6Exercicios41A60{
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 		int exercicio = ler.nextInt();
-		int numeroInteiro = 0, fatorial = 1, quantidade = 0;
+		int numeroInteiro = 0, fatorial = 1, quantidadeDigitada = 0, quantidadeImpressos = 0;
+		int[] numerosPrimos;
+		boolean ePrimo = true;
 		while(exercicio < 41 || exercicio > 60){
 			System.out.print("Valor invalido. Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 			exercicio = ler.nextInt();
@@ -52,8 +54,8 @@ public class Lista6Exercicios41A60{
 				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de fatoriais e
 				imprima o resultado.*/
 				System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
-				quantidade = ler.nextInt();
-				for(int i = 1;i <= quantidade;i++){
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 1;i <= quantidadeDigitada;i++){
 					fatorial *= i;
 					System.out.print(fatorial + " ");
 				}
@@ -62,26 +64,84 @@ public class Lista6Exercicios41A60{
 				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de fatoriais e imprima a
 				sequência do final para o início.*/
 				System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
-				quantidade = ler.nextInt();
-				for(int i = 1;i <= quantidade;i++){
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 1;i <= quantidadeDigitada;i++){
 					fatorial *= i;
 				}
-				for(int i = quantidade;i >= 1;i--){
+				for(int i = quantidadeDigitada;i >= 1;i--){
 					System.out.print(fatorial + " ");
 					fatorial /= i;
 				}
 			break;
 			case 46:
-				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
+				/*Enunciado: Solicite ao usuário um número e verifique se este número é primo ou não.*/
+				System.out.print("Digite um numero inteiro: ");
+				numeroInteiro = ler.nextInt();
+				if(numeroInteiro < 0){
+					numeroInteiro = -numeroInteiro;
+				}
+				if(numeroInteiro == 0 || numeroInteiro == 1){
+					ePrimo = false;
+				}
+				else{
+					for(int i = 2;i < numeroInteiro;i++){
+						if(numeroInteiro % i == 0){
+							ePrimo = false;
+						}
+					}
+				}
+				System.out.print("O numero digitado " + ((ePrimo == false) ? "nao " : "") + "e primo");
 			break;
 			case 47:
-				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
+				/*Enunciado: Imprima somente os números primos existentes na faixa de um 1 até 100.*/
+				for(int i = 2;i <= 100;i++){
+					for(int j = 2;j < i;j++){
+						if(i % j == 0){
+							ePrimo = false;
+						}
+					}
+					System.out.printf((ePrimo == true) ? "%d " : "", i);
+					ePrimo = true;
+				}
 			break;
 			case 48:
-				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
+				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de números primos e
+				imprima o resultado*/
+				System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 2;quantidadeImpressos < quantidadeDigitada;i++){
+					for(int j = 2;j < i;j++){
+						if(i % j == 0){
+							ePrimo = false;
+						}
+					}
+					if(ePrimo == true){
+						System.out.printf("%d ", i);
+						quantidadeImpressos++;
+					}
+					ePrimo = true;
+				}
 			break;
 			case 49:
-				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
+				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de números primos
+				e imprima a sequência do final para o início.*/
+				System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 2;quantidadeImpressos < quantidadeDigitada;i++){
+					for(int j = 2;j < i;j++){
+						if(i % j == 0){
+							ePrimo = false;
+						}
+					}
+					if(ePrimo == true){
+						numerosPrimos[quantidadeImpressos] = i;
+						quantidadeImpressos++;
+					}
+					ePrimo = true;
+				}
+				for(int i = numerosPrimos.length - 1;i > 0;i++){
+					System.out.printf("%d ", i);
+				}
 			break;
 			case 50:
 				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
