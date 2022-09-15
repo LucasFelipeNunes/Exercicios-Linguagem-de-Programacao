@@ -8,9 +8,9 @@ public class Lista6Exercicios41A60{
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 		int exercicio = ler.nextInt();
-		int numeroInteiro = 0, fatorial = 1, quantidadeDigitada = 0, quantidadeImpressos = 0;
-		int[] numerosPrimos;
-		boolean ePrimo = true;
+		int numeroInteiro = 0, fatorial = 1, quantidadeDigitada = 0, quantidadeImpressos = 0, numeroAnterior = 1, numeroRetrasado = 0, auxiliar = 0;
+		/*int[] numerosPrimos = mew int ;*/
+		boolean ePrimo = true, estaNaSequenciaDeFibonacci = false;
 		while(exercicio < 41 || exercicio > 60){
 			System.out.print("Valor invalido. Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 			exercicio = ler.nextInt();
@@ -122,10 +122,10 @@ public class Lista6Exercicios41A60{
 					ePrimo = true;
 				}
 			break;
-			case 49:
+			//case 49:
 				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de números primos
 				e imprima a sequência do final para o início.*/
-				System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
+				/*System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
 				quantidadeDigitada = ler.nextInt();
 				for(int i = 2;quantidadeImpressos < quantidadeDigitada;i++){
 					for(int j = 2;j < i;j++){
@@ -144,9 +144,82 @@ public class Lista6Exercicios41A60{
 				}
 			break;
 			case 50:
-				/*Enunciado: Solicite ao usuário um número e mostre o fatorial do número informado.*/
+				/*Enunciado: Solicite ao usuário o termo inicial e a quantidade de termos da sequência de
+				números primos e imprima o resultado.*/
+			//break;
+			case 51:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				System.out.print("Digite a quantidade de termos da sequencia de fatoriais: ");
+				quantidadeDigitada = ler.nextInt();
+				
+				for(int i = 0;i < quantidadeDigitada;i++){
+					if(i == 0 || i == 1){
+						System.out.printf("%d ", i);
+					}
+					else{
+						System.out.printf("%d ", numeroAnterior + numeroRetrasado);
+						auxiliar = numeroAnterior;
+						numeroAnterior += numeroRetrasado;
+						numeroRetrasado = auxiliar;
+					}
+				}
+			break;
+			case 52:
+				/*Solicite um número inteiro ao usuário e informe se ele pertence a sequência
+				de Fibonacci ou não.*/
+				System.out.print("Digite um numero inteiro: ");
+				numeroInteiro = ler.nextInt();
+				for(int i = 0;i < numeroInteiro;i++){
+					if(numeroAnterior + numeroRetrasado == numeroInteiro){
+						estaNaSequenciaDeFibonacci = true;
+					}
+					auxiliar = numeroAnterior;
+					numeroAnterior += numeroRetrasado;
+					numeroRetrasado = auxiliar;
+				}
+				System.out.print("O numero digitado " + ((estaNaSequenciaDeFibonacci == true) ? "" : "nao ") + "esta na sequencia de Fibonacci");
+			break;
+			case 53:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 54:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 55:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 56:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 57:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 58:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
+			break;
+			case 59:
+				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
+				o resultado.*/
+				
 			break;
 			default:
+				/*Solicite ao usuário os dois primeiros termos da sequência de Ricci e depois
+				solicite a número e verifique se o número informado pertence a sequência de
+				Ricci ou não.*/
+				
 			break;
 		}
 	}
