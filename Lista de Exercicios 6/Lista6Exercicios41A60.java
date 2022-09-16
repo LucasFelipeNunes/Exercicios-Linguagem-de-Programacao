@@ -8,9 +8,9 @@ public class Lista6Exercicios41A60{
 		Scanner ler = new Scanner(System.in);
 		System.out.print("Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 		int exercicio = ler.nextInt();
-		int numeroInteiro = 0, fatorial = 1, quantidadeDigitada = 0, quantidadeImpressos = 0, numeroAnterior = 1, numeroRetrasado = 0, auxiliar = 0;
+		int somaDivisores = 0, numeroInteiro = 0, fatorial = 1, quantidadeDigitada = 0, quantidadeImpressos = 0, numeroAnterior = 1, numeroRetrasado = 0, auxiliar = 0, termoInicial = 0, termoFinal = 0, contador = 0;
 		/*int[] numerosPrimos = mew int ;*/
-		boolean ePrimo = true, estaNaSequenciaDeFibonacci = false;
+		boolean ePrimo = true, estaNaSequenciaDeFibonacci = false, estaNaSequenciaDeRicci = false;
 		while(exercicio < 41 || exercicio > 60){
 			System.out.print("Valor invalido. Digite o numero inteiro (entre 41 e 60, inclusos) do exercicio que voce gostaria de ver: ");
 			exercicio = ler.nextInt();
@@ -122,11 +122,12 @@ public class Lista6Exercicios41A60{
 					ePrimo = true;
 				}
 			break;
-			//case 49:
+			case 49:
 				/*Enunciado: Solicite ao usuário a quantidade de termos da sequência de números primos
 				e imprima a sequência do final para o início.*/
-				/*System.out.printf("Digite a quantidade de termos da sequencia de fatoriais: ");
+				System.out.print("Digite a quantidade de termos da sequencia de numeros primos: ");
 				quantidadeDigitada = ler.nextInt();
+				int[] numerosPrimos49 = new int[quantidadeDigitada];
 				for(int i = 2;quantidadeImpressos < quantidadeDigitada;i++){
 					for(int j = 2;j < i;j++){
 						if(i % j == 0){
@@ -134,23 +135,43 @@ public class Lista6Exercicios41A60{
 						}
 					}
 					if(ePrimo == true){
-						numerosPrimos[quantidadeImpressos] = i;
+						numerosPrimos49[quantidadeImpressos] = i;
 						quantidadeImpressos++;
 					}
 					ePrimo = true;
 				}
-				for(int i = numerosPrimos.length - 1;i > 0;i++){
-					System.out.printf("%d ", i);
+				for(int i = numerosPrimos49.length - 1;i >= 0;i--){
+					System.out.printf("%d ", numerosPrimos49[i]);
 				}
 			break;
 			case 50:
 				/*Enunciado: Solicite ao usuário o termo inicial e a quantidade de termos da sequência de
 				números primos e imprima o resultado.*/
-			//break;
+				System.out.print("Digite o termo inicial da sequencia de numeros primos: ");
+				termoInicial = ler.nextInt();
+				System.out.print("Digite a quantidade de termos da sequencia de numeros primos: ");
+				quantidadeDigitada = ler.nextInt();
+				int numerosPrimos50[] = new int[quantidadeDigitada];
+				for(int i = termoInicial;quantidadeImpressos < quantidadeDigitada;i++){
+					for(int j = 2;j < i;j++){
+						if(i % j == 0){
+							ePrimo = false;
+						}
+					}
+					if(ePrimo == true){
+						numerosPrimos50[quantidadeImpressos] = i;
+						quantidadeImpressos++;
+					}
+					ePrimo = true;
+				}
+				for(int i = 0;i < numerosPrimos50.length;i++){
+					System.out.printf("%d ", numerosPrimos50[i]);
+				}
+			break;
 			case 51:
 				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
 				o resultado.*/
-				System.out.print("Digite a quantidade de termos da sequencia de fatoriais: ");
+				System.out.print("Digite a quantidade de termos da sequencia de Fibonacci: ");
 				quantidadeDigitada = ler.nextInt();
 				
 				for(int i = 0;i < quantidadeDigitada;i++){
@@ -181,45 +202,152 @@ public class Lista6Exercicios41A60{
 				System.out.print("O numero digitado " + ((estaNaSequenciaDeFibonacci == true) ? "" : "nao ") + "esta na sequencia de Fibonacci");
 			break;
 			case 53:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
-				
+				/*Imprima os numeros da sequencia de Fibonacci que estao presentes na faixa de 1 
+				ate 250.*/
+					for(int i = 0;true;i++){
+						if(numeroAnterior + numeroRetrasado > 250){
+							break;
+						}
+						if(i == 0 || i == 1){
+							System.out.printf("%d ", i);
+						}
+						else{
+							System.out.printf("%d ", numeroAnterior + numeroRetrasado);
+							auxiliar = numeroAnterior;
+							numeroAnterior += numeroRetrasado;
+							numeroRetrasado = auxiliar;
+						}
+					}
+					
+			
 			break;
 			case 54:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
-				
+				/*Solicite ao usuário o termo inicial e o termo final da sequencia de Fibonacci
+				(intervalo fechado) e imprima o resultado.*/
+				System.out.print("Digite o termo inicial da sequencia de Fibonacci: ");
+				termoInicial = ler.nextInt();
+				System.out.print("Digite o termo final da sequencia de Fibonacci: ");
+				termoFinal = ler.nextInt();
+				int[] numerosFibonacci = new int[termoFinal];
+				numerosFibonacci[0] = 0;
+				numerosFibonacci[1] = 1;
+				for(int i = 2;i < termoFinal;i++){
+					numerosFibonacci[i] = numeroAnterior + numeroRetrasado;
+					auxiliar = numeroAnterior;
+					numeroAnterior += numeroRetrasado;
+					numeroRetrasado = auxiliar;
+				}
+				for(int i = termoInicial - 1;i < termoFinal;i++){
+					System.out.print(" " + numerosFibonacci[i]);
+				}
 			break;
 			case 55:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
+				/*Solicite um numero inteiro ao usuario e informe se o numero e perfeito ou nao.*/
+				System.out.print("Digite um numero inteiro positivo: ");
+				numeroInteiro = ler.nextInt();
+				for(int i = 1;i <= numeroInteiro/2;i++){
+					if(numeroInteiro % i == 0){
+						somaDivisores += i;
+					}
+				}
 				
+				System.out.print("O numero digitado " + ((numeroInteiro == somaDivisores) ? "" : "nao ") + "e perfeito");
 			break;
 			case 56:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
-				
+				/*Imprima os numeros perfeitos da faixa de 1 a 900.*/
+				for(int i = 1;i <= 900;i++){
+					for(int j = 1;j <= i/2;j++){
+						if(i % j == 0){
+							somaDivisores += j;
+						}
+					}
+					if(i == somaDivisores){
+						System.out.print(i + " ");
+					}
+					somaDivisores = 0;
+				}
 			break;
 			case 57:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
-				
+				/*Solicite ao usuário a quantidade de termos da sequência de numeros perfeitos e
+				imprima o resultado. (Atenção! Este processamento pode demorar MUITO).*/
+				System.out.print("Digite a quantidade de termos da sequencia: ");
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 1;contador < quantidadeDigitada;i++){
+					for(int j = 1;j <= i/2;j++){
+						if(i % j == 0){
+							somaDivisores += j;
+						}
+					}
+					if(i == somaDivisores){
+						System.out.print(i + " ");
+						contador++;
+					}
+					somaDivisores = 0;
+				}
 			break;
 			case 58:
 				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
 				o resultado.*/
-				
+				System.out.print("Digite o primeiro termo da sequencia de Ricci: ");
+				numeroRetrasado = ler.nextInt();
+				System.out.print("Digite o segundo termo da sequencia de Ricci: ");
+				numeroAnterior = ler.nextInt();
+				System.out.print(numeroRetrasado + " " + numeroAnterior);
+				for(int i = 0;i < 10;i++){
+					System.out.printf(" %d", numeroAnterior + numeroRetrasado);
+					auxiliar = numeroAnterior;
+					numeroAnterior += numeroRetrasado;
+					numeroRetrasado = auxiliar;
+				}
 			break;
 			case 59:
-				/*Solicite ao usuário a quantidade de termos da sequência de Fibonacci e imprima
-				o resultado.*/
-				
+				/* Solicite ao usuário os dois primeiros termos da sequência de Ricci e depois
+				solicite a quantidade de termos que ele deseja gerar. Imprimir o resultado.*/
+				System.out.print("Digite o primeiro termo da sequencia de Ricci: ");
+				numeroRetrasado = ler.nextInt();
+				System.out.print("Digite o segundo termo da sequencia de Ricci: ");
+				numeroAnterior = ler.nextInt();
+				System.out.print("Digite a quantidade de numeros da sequencia de Ricci: ");
+				quantidadeDigitada = ler.nextInt();
+				for(int i = 0;i < quantidadeDigitada;i++){
+					if(i == 0){
+						System.out.print(numeroRetrasado);
+					}
+					else if(i == 1){
+						System.out.print(" " + numeroAnterior);
+					}
+					else{
+						System.out.printf(" %d", numeroAnterior + numeroRetrasado);
+						auxiliar = numeroAnterior;
+						numeroAnterior += numeroRetrasado;
+						numeroRetrasado = auxiliar;
+					}
+				}
 			break;
 			default:
 				/*Solicite ao usuário os dois primeiros termos da sequência de Ricci e depois
 				solicite a número e verifique se o número informado pertence a sequência de
 				Ricci ou não.*/
-				
+				System.out.print("Digite o primeiro termo da sequencia de Ricci: ");
+				numeroRetrasado = ler.nextInt();
+				System.out.print("Digite o segundo termo da sequencia de Ricci: ");
+				numeroAnterior = ler.nextInt();
+				System.out.print("Digite o numero que voce gostaria de procurar nesta sequencia: ");
+				int numeroProcurado = ler.nextInt();
+				if(numeroProcurado == numeroRetrasado || numeroProcurado == numeroAnterior){
+					estaNaSequenciaDeRicci = true;
+				}
+				else{
+					for(int i = 0;i < numeroProcurado;i++){
+						auxiliar = numeroAnterior;
+						numeroAnterior += numeroRetrasado;
+						numeroRetrasado = auxiliar;
+						if(numeroAnterior == numeroProcurado){
+							estaNaSequenciaDeRicci = true;
+						}
+					}
+					System.out.print("O numero procurado " + ((estaNaSequenciaDeRicci == true) ? "" : "nao ") + "esta na sequencia.");
+				}
 			break;
 		}
 	}
