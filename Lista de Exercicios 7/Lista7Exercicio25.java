@@ -1,5 +1,5 @@
 /*Nome: Lucas Felipe da Silva Nunes
-Enunciado:  Escreva um programa validador de senhas. A regra para a criação de uma senha forte é
+Enunciado: Escreva um programa validador de senhas. A regra para a criação de uma senha forte é
 que a senha deve ser de tamanho mínimo 10. A senha deve conter letras maiúsculas, letras
 minúsculas, números e caracteres especiais/símbolos (!@#$%&*()+). Outra regra, deve ter
 pelo menos 3 caracteres (maiúsculo ou minúsculo), pelo menos 3 números e pelo menos 2
