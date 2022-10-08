@@ -7,7 +7,7 @@ public class ValorNull
 {
 	public static void main (String[] args)
 	{
-		String numero = "3.14";
+		Double numero = new Double(3.14);
 		System.out.println("O número inicialmente e " + numero);
 		numero = null;
 		System.out.println("O número posteriormente e " + numero);
