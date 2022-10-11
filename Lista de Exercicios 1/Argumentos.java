@@ -5,7 +5,7 @@ public class Argumentos
 	{
 		for (int i = 0; i < 2; i++)
 		{
-            System.out.println(args[]);
+            System.out.println(args[i]);
 		}
 	}
 }

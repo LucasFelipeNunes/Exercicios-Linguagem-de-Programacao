@@ -6,7 +6,7 @@ public class TestaTiposPrimitivos
 		byte inteiroDeUmByte = 13;
 		short inteiroDeDoisBytes = 132;
 		int inteiroDeQuatroBytes = 132322;
-		long inteiroDeOitoBytes = 10123456789;
+		long inteiroDeOitoBytes = 10123456789L;
 		float numeroComVirgulaDeQuatroBytes = 3.01f;
 		double numeroComVirgulaDeOitoBytes = 3.0000000001;
 		char caractere = 'a';
