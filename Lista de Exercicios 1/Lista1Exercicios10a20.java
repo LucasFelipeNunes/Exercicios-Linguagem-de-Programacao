@@ -34,28 +34,29 @@ public class Lista1Exercicios10a20 {
 				System.out.print("Resposta: d. Três");
 			break;
 			case "15":
-				System.out.print("\nEnunciado: 1 \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");
+				System.out.print("\nEnunciado: 15 - Para verificar a versão do compilador Java ou do ambiente de execução Java, qual opção podemos utilizar ao executar os comandos javac ou java?\na. -version\nb. -v\nc. -ver\nd. -versao");
+				System.out.print("Resposta: a. -version");
 			break;
 			case "16":
-				System.out.print("\nEnunciado: 1 \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");
+				System.out.print("\nEnunciado: 16 - Qual alternativa declara corretamente o método main? \na. public static main(String[] args)\nb. public static void Main(String[] args)\nc. void main(String[] args)\nd. static void Main()\ne. public static void main(String[] args)");
+				System.out.print("Resposta: e. public static void main(String[] args)");
 			break;
 			case "17":
-				System.out.print("\nEnunciado: 1 \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");
+				System.out.print("\nEnunciado: 17 - Qual código pode ser utilizado para exibir a mensagem Fatec em Java?\na. system.out.println(\"Fatec \")\nb. System.out.println(\"Fatec \")\nc. System.Console.WriteLine(\"Fatec \")\nd. system.console.writeline(\"Fatec \")\ne. print(\"Fatec \")");
+				System.out.print("\n\nResposta: b. System.out.println(\"Fatec \")");
 			break;
 			case "18":
-				System.out.print("\nEnunciado: 1 \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");
+				System.out.print("\nEnunciado: 18 - Qual sequência de escape indica uma \"quebra de linha\"?\na. \\n\nb. \\r\nc. \\f\nd. \\t\ne. \\b\n");
+				System.out.print("\nResposta: a. \\n");
 			break;
 			case "19":
-				System.out.print("\nEnunciado: 1 \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");
+				System.out.print("\nEnunciado: 19 - Quais são os marcadores utilizados para inserir comentários nos programas em Java?\na. // e %\nb. #, //, /* e */\nc. //, /* e */\nd. <!- - e - ->\ne. % e #");
+				System.out.print("\n\nResposta: c. //, /* e */");
 			break;
 			default:
-				System.out.print("\nEnunciado: 20 - \na. \nb. \nc. \nd. \ne. ");
-				System.out.print("Resposta: ");		}
+				System.out.print("\nEnunciado: 20 - Considere o seguinte programa em Java.\n\nclass Argumentos{\n\tpublic static void main(String[] args){\n\t\tSystem.out.println(args[0]);\n\t\tSystem.out.println(args[1]);\n\t}\n}\n\nO que seria exibido na saída padrão se a classe Argumentos fosse executada com o seguinte comando?\njava Argumentos Fatec Livros\na. java e Argumentos\nb. Argumentos e Fatec\nc. Fatec e Livros\nd. java e Fatec\ne. Argumentos e Livros");
+				System.out.print("\n\nResposta: a. java e Argumentos");
+		}
 	}
 }
 
