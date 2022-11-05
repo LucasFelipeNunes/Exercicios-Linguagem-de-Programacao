@@ -7,9 +7,9 @@
 ## [1ª Lista de Exercícios](Lista%20de%20Exercicios%201)
 Esta lista contém exercícios para o treinamento de assuntos introdutórios a linguagem de programação Java, como criação de funções, saída de dados e sequências de escape.
 ## [2ª Lista de Exercícios](Lista%20de%20Exercicios%202)
-Esta lista contém exercícios para o treinamento de
+Esta lista contém exercicios para o treinamento de conceitos relacionados a variáveis na linguagem Java, como sua declaração, tipos, atribuição de valores e impressão.
 ## [3ª Lista de Exercícios](Lista%20de%20Exercicios%203)
-Esta lista contém exercícios para o treinamento de
+Esta lista contém exercicios para o treinamento de conceitos relacionados a operadores na linguagem Java, como operações aritméticas, operações relacionais, operações lógicas, operações ternárias, incremento e decremento, limites de valores de variáveis e conversão de variáveis,
 ## [4ª Lista de Exercícios](Lista%20de%20Exercicios%204)
 Esta lista contém exercícios para o treinamento de
 ## [5ª Lista de Exercícios](Lista%20de%20Exercicios%205)
