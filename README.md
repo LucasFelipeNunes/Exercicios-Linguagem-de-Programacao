@@ -5,14 +5,20 @@
 </html>
 
 ## [1ª Lista de Exercícios](Lista%20de%20Exercicios%201)
+Esta lista contém exercícios para o treinamento de assuntos introdutórios a linguagem de programação Java, como criação de funções, saída de dados e sequências de escape.
 ## [2ª Lista de Exercícios](Lista%20de%20Exercicios%202)
+Esta lista contém exercícios para o treinamento de
 ## [3ª Lista de Exercícios](Lista%20de%20Exercicios%203)
+Esta lista contém exercícios para o treinamento de
 ## [4ª Lista de Exercícios](Lista%20de%20Exercicios%204)
-
+Esta lista contém exercícios para o treinamento de
 ## [5ª Lista de Exercícios](Lista%20de%20Exercicios%205)
-
+Esta lista contém exercícios para o treinamento de
 ## [6ª Lista de Exercícios](Lista%20de%20Exercicios%206)
+Esta lista contém exercícios para o treinamento de
 ## [7ª Lista de Exercícios](Lista%20de%20Exercicios%207)
+Esta lista contém exercícios para o treinamento de
 ## [8ª Lista de Exercícios](Lista%20de%20Exercicios%208)
+Esta lista contém exercícios para o treinamento de
 ## [Exercícios Feitos em Sala](Exercicios%20Feitos%20em%20Sala)
 Inclui todos os exercícios desenvolvidos em sala de aula, abrangendo todos os temas mencionados.
