@@ -20,5 +20,9 @@ Esta lista contém exercícios para o treinamento de conceitos relacionados a la
 Esta lista contém exercícios para o treinamento de conceitos relacionados a strings na linguagem Java, laços de repetição e casting, como declaração e aplicação de strings, uso da tabela ASCII, análise e manipulação dos caracteres de uma string, criptografia e descriptografia.
 ## [8ª Lista de Exercícios - Vetores](Lista%20de%20Exercicios%208)
 Esta lista contém exercícios para o treinamento de conceitos relacionados a Vetores na linguagem Java, como sua declaração, atribuição de valores e uso, concatenação, interpolação e ordenação de elementos.
+## [1ª Prova](Prova1)
+Nos exercícios desta prova são abordados conceitos apresentados entre a 1ª e a 6ª lista de exercícios.
+## [2ª Prova - Em construção](Prova2)
+Nos exercícios desta prova são abordados conceitos apresentados na 7ª e na 8ª lista de exercícios.
 ## [Exercícios Feitos em Sala](Exercicios%20Feitos%20em%20Sala)
 Inclui todos os exercícios desenvolvidos em sala de aula, abrangendo todos os temas mencionados.
