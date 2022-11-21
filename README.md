@@ -26,3 +26,5 @@ Nos exercícios desta prova são abordados conceitos apresentados entre a 1ª e 
 Nos exercícios desta prova são abordados conceitos apresentados na 7ª e na 8ª lista de exercícios.
 ## [Exercícios Feitos em Sala](Exercicios%20Feitos%20em%20Sala)
 Inclui todos os exercícios desenvolvidos em sala de aula, abrangendo todos os temas mencionados.
+## [Desafios](Desafios)
+Inclui exercícios feitos para a monitoria de Programação Orientada a Objetos no 2º Semestre de 2022, também usando o Geany e a linguagem de programação Java.
