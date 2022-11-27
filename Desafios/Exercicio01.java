@@ -24,9 +24,7 @@ public class Exercicio01{
 				auxiliar = i;
 				melhorNota = somaNotas(notasAberturas[i], notasJogadas[i]);
 			}
-			else if(somaNotas(notasAberturas[i], notasJogadas[i]) == melhorNota){
-				empate = true;
-			}
+			empate = (somaNotas(notasAberturas[i], notasJogadas[i]) == melhorNota);
 		}
 		melhorParticipante = nomes[auxiliar];
 		for(int i = 0;i < qtdParticipantes;i++){
