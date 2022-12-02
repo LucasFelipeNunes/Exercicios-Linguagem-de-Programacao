@@ -16,12 +16,19 @@ Esta lista contém exercicios para o treinamento de conceitos relacionados a var
 7 – Indique os tipos da linguagem Java que aceitam cada valor da lista abaixo.
 
 a. "Bom dia"
+
 b. 3
+
 c. 235.13
+
 d. true
+
 e. -135
+
 f. 256.23F
+
 g. 'A'
+
 h. 6463275245745L
 
 Obs: faça os testes necessários com um programa escrito em Java para identificar os tipos.
