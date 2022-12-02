@@ -40,7 +40,7 @@ public class Lista8Exercicio27{
 				}
 				if(contem){
 					exists = true;
-					comeca = i - N - 1;
+					comeca = i - 1;
 					break;
 				}
 			}
