@@ -1,4 +1,17 @@
-//Nome: Lucas Felipe da Silva Nunes
+/*Nome: Lucas Felipe da Silva Nunes
+Enunciado: ROT-13 (ou rot13, rot-13, Rot13, etc) é o nome que se costuma usar para um procedimento
+simples mas eficaz para garantir que textos eletrônicos não sejam lidos por distração ou
+acidente. ROT-13 vem do inglês, ROTate by 13 places, "ROTacionar 13 posições".
+Especificamente, a cifra ROT-13 tem se mostrado útil principalmente para proteger endereços
+de correio eletrônico (evitando SPAM, o envio de mensagens não solicitadas) e para "proteger"
+mensagens que o remetente pode preferir não.
+Como era de se esperar, o ROT-13 é usado principalmente em grupos de discussão (como na
+usenet) e em listas de discussão como as dos Yahoo.
+Um detalhe importante: não há qualquer diferença entre o procedimento para codificar um
+texto em ROT-13 e o procedimento para decodificá-lo; simplesmente aplicamos o mesmo
+procedimento uma segunda vez.
+30) Da mesma forma que o exercício anterior, implemente um programa para criptografar e
+descriptografar utilizando a cifra ROT-13.*/
 import java.util.Scanner;
 public class Lista7Exercicio30{
 	public static void main(String[] args){
@@ -48,6 +61,7 @@ public class Lista7Exercicio30{
 					}
 				}
 				System.out.print("A frase descriptografada e " + fraseDescriptografada + "\n\n");
+			}
 			else{
 				sair = true;
 			}
