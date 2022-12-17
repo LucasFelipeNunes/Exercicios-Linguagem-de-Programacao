@@ -1,8 +1,7 @@
 # Exercícios de Linguagem de Programação
-<html>
-<p>Este repositório contém os exercícios feitos para treinamento dos conceitos aprendidos na matéria de Linguagem de Programação, do 2º Semestre do curso de Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia de Guaratinguetá Professor João Mod.</p>
-<p>Os exercícios foram feitos no software Geany usando a linguagem Java, e estao divididos em 8 listas, cada uma contendo exercícios sobre diferentes temas:</p>
-</html>
+Este repositório contém os exercícios feitos para treinamento dos conceitos aprendidos na matéria de Linguagem de Programação, do 2º Semestre do curso de Análise e Desenvolvimento de Sistemas da Faculdade de Tecnologia de Guaratinguetá Professor João Mod.
+
+Os exercícios foram feitos no software Geany usando a linguagem Java, e estao divididos em 8 listas, cada uma contendo exercícios sobre os seguintes temas:
 
 ## [1ª Lista de Exercícios - Introdução](ListaDeExercicios1)
 Esta lista contém exercícios para o treinamento de assuntos introdutórios a linguagem de programação Java, como criação de funções, saída de dados e sequências de escape.
@@ -22,9 +21,11 @@ Esta lista contém exercícios para o treinamento de conceitos relacionados a st
 Esta lista contém exercícios para o treinamento de conceitos relacionados a Vetores na linguagem Java, como sua declaração, atribuição de valores e uso, concatenação, interpolação e ordenação de elementos.
 ## [1ª Prova](Prova1)
 Nos exercícios desta prova são abordados conceitos apresentados entre a 1ª e a 6ª lista de exercícios.
-## [2ª Prova - Em construção](Prova2)
+## [2ª Prova](Prova2)
 Nos exercícios desta prova são abordados conceitos apresentados na 7ª e na 8ª lista de exercícios.
 ## [Exercícios Feitos em Sala](ExerciciosFeitosEmSala)
 Inclui todos os exercícios desenvolvidos em sala de aula, abrangendo todos os temas mencionados.
 ## [Desafios](Desafios)
 Inclui exercícios feitos para a monitoria de Programação Orientada a Objetos no 2º Semestre de 2022, também usando o Geany e a linguagem de programação Java.
+
+**PS:** Agradeço ao [Luiz Gustavo](https://github.com/LuizGustavoDuarte) por me ajudar a realizar a 2ª prova e exercícios referentes a ela, e ao [João Machado](https://github.com/machado-joao) por formular os exercícios de desafio e pela ajuda em outros exercícios enquanto monitor desta matéria, no 2º Semestre de 2022.
